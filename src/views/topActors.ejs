@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actores ordenados por rating</title>
+    <link rel='stylesheet' href='/css/style.css' />
+</head>
+<body>
+    <figure>
+        <img src="/img/logo-DH.png" alt="Logo Digital House">
+    </figure>
+    <h1>TOP 10 DE ACTORES</h1>
+    <ol>
+        <% for( let i = 0; i < actors.length; i++ ) { %>
+        <li style="font-size: 1.5rem">
+            <%= actors[i].first_name + " " + actors[i].last_name %> <br>
+            <%= 'RATING: ' + actors[i].rating %> <br><br>
+        </li>
+        <% } %>
+        
+    </ol>
+</body>
+</html>

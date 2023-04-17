@@ -20,6 +20,9 @@ module.exports = (sequelize, dataTypes) => {
         rating: {
             type: dataTypes.DECIMAL(3, 1),
         },
+        favorite_movie_id: {
+            type: dataTypes.INTEGER(10).UNSIGNED,
+        }
     };
 
     const config = {
